@@ -4,5 +4,9 @@ class FizzBuzzTest extends AnyFunSuite {
   test("prints FizzBuzz if divisible by 3 and 5") {
     assert(FizzBuzz.generate(15) === "FizzBuzz")
   }
+  test("prints Fizz if divisible by 3") {
+    assert(FizzBuzz.generate(3) === "Fizz")
+  }
+
 }
 
