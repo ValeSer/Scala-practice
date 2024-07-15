@@ -1,5 +1,5 @@
 object FizzBuzz {
-  def generate(number: Int): String = {
+  def generateOne(number: Int): String = {
     if ((number % 3) == 0 && (number % 5) == 0) {
       return "FizzBuzz"
     } else if ((number % 3) == 0) {
@@ -10,9 +10,9 @@ object FizzBuzz {
     return ""
   }
 
-
-
-
-
+  def generate(number: Int): String = {
+    val s = 1 to number
+    return s.map(generateOne).mkString(", ")
+  }
 }
 
