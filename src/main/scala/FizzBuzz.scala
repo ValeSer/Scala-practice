@@ -38,7 +38,7 @@ object FizzBuzz {
   }
 
   def generate(number: Int): String = number match {
-    case 0 => ""
+    case n if n <= 0 => ""
     case 1 => generateOne(1)
     case _ => generate(number - 1) + ", " + generateOne(number)
   }
